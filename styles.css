@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,500;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: border-box;
+}
+
+/* ------------------Common Section -------------------------------*/
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+section {
+    margin-bottom: 5em;
+}
+
+/*-------------------------- Navigation Section -------------------*/
+nav.navigation {
+    display: flex;
+    justify-content: space-between;
+    width:1215px ;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+}
+
+nav.navigation .logo {font-size: 22px;text-transform: uppercase;}
+
+.menu_bar {
+    display: flex;
+    align-items: center;
+}
+
+.menu_bar .menu {
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px 20px;
+    
+ 
+}
+.menu li:hover a{
+    color: white;
+    background: #7ab69c;
+    border-radius: 15px;
+    transition: 1.4s;
+    
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 23px;
+   
+    
+}
+
+.menu_icons i {font-size: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 2s;
+}
+.menu_icons i:hover{
+    color: #7ab69c;
+}
+
+
+/* -------------------------Product Profile--------------------- */
+
+.product_profile {
+    display: flex;
+    width: 1215px;
+    margin: auto;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.product_title {
+    width: 59%;
+}
+
+.product_title h3 {
+    font-size: 45px;
+    width: 430px;
+    padding: 25px 0px;
+    line-height: 1.7em;
+}
+
+.product_title p {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+button.booking_btn {
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    background: #7ab69c;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 2s;
+    cursor: pointer;
+}
+
+button.booking_btn:hover  {
+color: white;
+background-color: black;
+
+
+}
+img.main_img {
+    background-image: url("images/circle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    transition: 2s;
+    cursor: pointer;
+    
+}
+img.main_img:hover{
+    transform: scale(1.1);
+    
+}
+
+/*---------------------------------- Sponsors Section----------------------------- */
+.sponsors {
+    width: 1215px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 150px;
+    border-bottom: 1px solid #00000017;
+    border-top: 1px solid #00000017;
+        padding: 10px 0px;
+    }
+
+
+    /*----------------------- Popular Collection -------------------------*/
+    .popular_collection {
+        width: 1070px;
+        margin: auto;
+}
+
+h3.collection_title {
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}
+
+
+.blog_img img {
+        width: 100%;
+        border-radius: 20px;
+}
+
+.blog_info h4 {
+        font-size: 25px;
+}
+
+.blog_info {
+        text-align: center;
+        padding: 20px 0px;
+}
+
+.blog_info h5 {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px 0px;
+}
+
+.ratings {
+        display: flex;
+        justify-content: center;
+}
+
+.rating-icons {
+        padding: 0px 10px;
+}
+
+.filled {
+        color: goldenrod;
+}
+
+.empty {
+        color: gainsboro;
+}
+
+.rating-icons {
+        margin-bottom: 15px;
+}
+
+.blog_info p {
+        padding: 6px 0px;
+        font-size: 19px;
+}
+a.link_symble {
+    position: absolute;
+    right: 135px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #7ab69c;
+}
+
+/* ------------------------------------Last Gear Section------------------------------------- */
+
+div#product_details {margin: auto;
+                  width: 600px;
+                }
+
+
+                /*----------------------------- Footer Style -------------------------------*/
+
+                footer {
+                    margin-top: 100px;
+                    background: #7ab69c;
+            }
+            
+            .footer_description {text-align: center;}
+            
+            .social_media {
+                    text-align: center;
+            }
+            
+            .footer_description h4 {
+                    font-size: 20px;
+                    padding: 15px 0px;
+                    text-transform: uppercase;
+                    color: #fff4f4c9;
+            }
+            
+            .footer_description p {
+                    font-size: 15px;
+                    padding: 7px 0px;
+            }
+            
+            .social_media i {
+                    font-size: 20px;
+                    padding: 12px 10px;
+                    color: #fbf8f8b8;
+            }
+            .social_media i:hover{
+                color: black;
+                transition: 2.5s;
+            }
+
+            /*--------------------------- Media Query------------------------------ */
+
+
+            /*--------------------------- Mobile_Device -----------------------------*/
+
+            @media only screen and (max-width:688px){
+                .product_profile, .blogs{
+                    grid-template-columns: repeat(1, 1fr);
+                    width: 100%;
+                }
+                .product_title h3{
+                    font-size: 30px;
+                     width: 80%;
+                }
+
+
+                
+
+
+                /* nav.navigation{
+                    grid-template-columns: repeat(1, 1fr);
+                    width: 100%;
+                }
+                nav.navigation .logo{
+                  
+                }
+                .menu_bar{
+                  
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .menu ul{
+                    grid-template-columns: repeat(1,1fr);
+                }
+
+                .popular_collection{
+                    width: 80%;
+                    margin: auto;
+                }
+               .blogs{
+                  
+                   grid-template-columns: repeat(1, 1fr);
+               }
+              
+               .product_title h3{
+                   width: 100%;
+               }
+               img.main_img{
+                   width: 100%;
+               }
+               .product_profile{
+                grid-template-columns: repeat(1, 1fr);
+                width: 80%;
+                margin: auto;
+               } */
+            }
+          
